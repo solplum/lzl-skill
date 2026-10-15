@@ -36,6 +36,8 @@
 ### 💼 2. 工程质量与工作流
 * **[logic-review](https://github.com/solplum/logic-review)** — **代码与内容逻辑审查 Skill**
   代码 11 维 + 内容 7 维清单化逻辑审查。贯彻双态证据纪律，默认只审不修，有效拦截模型幻觉与架构缺陷。
+* **[run-all](https://github.com/solplum/run-all)** — **清单驱动全流程测试框架**
+  三门测试：门0 静态审查（logic-review）+ 门1 API 层 + 门2 界面层。分叉路径全组合、异常探针内建，报告与 results.json 证据落盘——只报结论不落盘 = 没完成。
 * **[log-skill](https://github.com/solplum/log-skill)** — **周报整理、履历素材挖掘与交接汇报工具组**
   包含 `worklog`（周报叙事）、`alllog`（履历素材挖掘）、`change-report`（Git变更备忘）与 `changelog`（交接审查表）四合一工作流套件。
 * **[agent-git-workflow-skills](https://github.com/solplum/agent-git-workflow-skills)** — **严谨型 Git 工作流套件**
