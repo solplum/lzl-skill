@@ -36,6 +36,8 @@
 ### 💼 2. 工程质量与工作流
 * **[lzl-advisor](skills/lzl-advisor/SKILL.md)** — **项目决策与职责边界顾问**
   按公司／个人项目、阶段与实际使用情况，权衡交付要求、后续风险、总成本和责任边界，给出明确的处理建议。仅做评估，不编写实现代码。
+* **[lzl-testplan](skills/lzl-testplan/SKILL.md)** — **公司项目改动测试方案设计**
+  面向普通开发人员，结合本次改动、真实使用、授权与环境，生成可执行、不过度测试的交付验证方案；支持少量已授权探测，不代替整套测试执行或发布审批。
 * **[logic-review](https://github.com/solplum/logic-review)** — **代码与内容逻辑审查 Skill**
   代码 11 维 + 内容 7 维清单化逻辑审查。贯彻双态证据纪律，默认只审不修，有效拦截模型幻觉与架构缺陷。
 * **[run-all](https://github.com/solplum/run-all)** — **清单驱动全流程测试框架**
@@ -74,7 +76,15 @@
 项目内技能适配遵循通用 `SKILL.md` 规范的 Agent 环境（如 Claude Code、Codex、ZCode 等）。
 
 ### 单技能引入
-进入目标仓库目录，按照仓库说明克隆或引入至对应的 `.agents/skills/` 目录。例如：
+本仓库内的 `lzl-advisor` 和 `lzl-testplan` 可独立使用：将 `skills/` 下对应的完整技能文件夹（含 `references/`，如有）放入所用 Agent 支持的技能目录，不要只复制 `SKILL.md`。
+
+使用 `lzl-testplan` 时，在待测项目中告诉 Agent：
+
+> 使用 lzl-testplan，针对本次改动设计贴近真实使用的测试方案。先查看需求、diff、相关代码和环境，说明具体怎么测、预期结果、必要权限、数据清理和完成标准。能查清的先查，影响方案的缺口及时问我；这次先出方案，不执行整套测试。
+
+已知的交付目标、比较基线和授权可以一并提供，不清楚的无需先填技术权限表。该技能生成方案，不把方案就绪当作测试通过，也不会自动合并或发布。
+
+其他链接到独立仓库的技能，按各自仓库说明引入。例如：
 ```bash
 # 引入代码审查 Skill
 git clone https://github.com/solplum/logic-review.git
