@@ -34,6 +34,8 @@
 ---
 
 ### 💼 2. 工程质量与工作流
+* **[lzl-advisor](skills/lzl-advisor/SKILL.md)** — **项目决策与职责边界顾问**
+  按公司／个人项目、阶段与实际使用情况，权衡交付要求、后续风险、总成本和责任边界，给出明确的处理建议。仅做评估，不编写实现代码。
 * **[logic-review](https://github.com/solplum/logic-review)** — **代码与内容逻辑审查 Skill**
   代码 11 维 + 内容 7 维清单化逻辑审查。贯彻双态证据纪律，默认只审不修，有效拦截模型幻觉与架构缺陷。
 * **[run-all](https://github.com/solplum/run-all)** — **清单驱动全流程测试框架**
