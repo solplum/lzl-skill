@@ -45,7 +45,7 @@
 * **[log-skill](https://github.com/solplum/log-skill)** — **周报整理、履历素材挖掘与交接汇报工具组**
   包含 `worklog`（周报叙事）、`alllog`（履历素材挖掘）、`change-report`（Git变更备忘）与 `changelog`（交接审查表）四合一工作流套件。
 * **[agent-git-workflow-skills](https://github.com/solplum/agent-git-workflow-skills)** — **严谨型 Git 工作流套件**
-  包含本地留痕（`git-record`）、防冲突安全推送（`git-push`）、主干对齐（`git-sync`）与变更报告（`change-report`），内置凭据防泄漏规则。
+  包含本地留痕（`git-record`）、防冲突安全推送（`git-push`）、主干对齐（`git-sync`）、本地合并与语义整合（[lzl-merge](https://github.com/solplum/agent-git-workflow-skills/tree/codex/publish-skills/lzl-merge)）与变更报告（`change-report`），内置凭据防泄漏规则。`lzl-merge` 的完整技能目录统一维护在该套件内，按套件说明独立引入。
 
 ---
 
