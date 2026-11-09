@@ -1,0 +1,2 @@
+# Optional: ordinary notes use only the Python standard library.
+keyring>=25,<26

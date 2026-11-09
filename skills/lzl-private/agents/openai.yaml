@@ -1,0 +1,7 @@
+interface:
+  display_name: "lzl-private"
+  short_description: "按需记录和查找个人重要资料，通过系统凭据库保存并使用密钥，首次使用引导选择存储位置。"
+  default_prompt: "使用 $lzl-private 管理我的重要资料；先检查已有配置，首次使用时展示包含绝对路径的存储选项。"
+
+policy:
+  allow_implicit_invocation: true

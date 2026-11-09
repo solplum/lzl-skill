@@ -50,6 +50,8 @@
 ---
 
 ### 📱 3. 端侧智能与系统管理
+* **[lzl-private](skills/lzl-private/README.md)** — **个人重要资料与凭据管家**
+  按需登记、查找和更新重要资料，使用系统凭据库保存 API Key、Token；首次引导展示实际绝对路径，仅在检测到有效资料库时提供复用选项，资料与技能代码独立保存。
 * **[yunkai](https://github.com/solplum/yunkai)** — **本地端侧手机 AI Agent**
   Android 11+ 与 HarmonyOS NEXT 双端原生实现。具备屏幕理解、写操作确认卡审批、手势执行与全本地长期记忆。
 * **[weaver-evolve](https://github.com/solplum/weaver-evolve)** — **Agent 自进化与知识维护 Skill 集群**
@@ -76,7 +78,13 @@
 项目内技能适配遵循通用 `SKILL.md` 规范的 Agent 环境（如 Claude Code、Codex、ZCode 等）。
 
 ### 单技能引入
-本仓库内的 `lzl-advisor` 和 `lzl-testplan` 可独立使用：将 `skills/` 下对应的完整技能文件夹（含 `references/`，如有）放入所用 Agent 支持的技能目录，不要只复制 `SKILL.md`。
+本仓库内的 `lzl-advisor`、`lzl-testplan` 和 `lzl-private` 可独立使用：将 `skills/` 下对应的完整技能文件夹（含脚本和引用文档，如有）放入所用 Agent 支持的技能目录，不要只复制 `SKILL.md`。
+
+使用 `lzl-private` 时告诉 Agent：
+
+> 使用 lzl-private 保存和按需查找我的重要资料。先检查已有配置；首次使用时，给我包含完整绝对路径的存储选项，只有检测到已有资料库时才展示复用选项。
+
+普通资料需要 Python 3.10+；密钥功能额外使用 `keyring` 和系统凭据库。安装、密钥录入及安全边界见 [lzl-private 使用说明](skills/lzl-private/README.md)。用户的真实资料与密钥均不放在本仓库。
 
 使用 `lzl-testplan` 时，在待测项目中告诉 Agent：
 
