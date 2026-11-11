@@ -1,4 +1,4 @@
 interface:
-  display_name: "万物皆可重构"
+  display_name: "lzl-refactor"
   short_description: "面向组织、产品与软件系统，基于目标诊断结构并提出唯一推荐架构"
   default_prompt: "使用 $lzl-refactor，先确认重构目标，再研究现状并给出一套包含架构图的方案。"
