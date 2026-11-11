@@ -36,6 +36,8 @@
 ### 💼 2. 工程质量与工作流
 * **[lzl-advisor](skills/lzl-advisor/SKILL.md)** — **项目决策与职责边界顾问**
   按公司／个人项目、阶段与实际使用情况，权衡交付要求、后续风险、总成本和责任边界，给出明确的处理建议。仅做评估，不编写实现代码。
+* **[lzl-refactor](skills/lzl-refactor/SKILL.md)** — **万物皆可重构：结构诊断与架构方案**
+  面向组织、产品体系、软件项目和局部模块，先确认目标，再研究现状、验证关键判断，交付一套包含架构图的推荐方案；允许保留现有结构，不默认实施或修改真实系统。
 * **[lzl-testplan](skills/lzl-testplan/SKILL.md)** — **公司项目改动测试方案设计**
   面向普通开发人员，结合本次改动、真实使用、授权与环境，生成可执行、不过度测试的交付验证方案；支持少量已授权探测，不代替整套测试执行或发布审批。
 * **[logic-review](https://github.com/solplum/logic-review)** — **代码与内容逻辑审查 Skill**
@@ -78,13 +80,19 @@
 项目内技能适配遵循通用 `SKILL.md` 规范的 Agent 环境（如 Claude Code、Codex、ZCode 等）。
 
 ### 单技能引入
-本仓库内的 `lzl-advisor`、`lzl-testplan` 和 `lzl-private` 可独立使用：将 `skills/` 下对应的完整技能文件夹（含脚本和引用文档，如有）放入所用 Agent 支持的技能目录，不要只复制 `SKILL.md`。
+本仓库内的 `lzl-advisor`、`lzl-refactor`、`lzl-testplan` 和 `lzl-private` 可独立使用：将 `skills/` 下对应的完整技能文件夹（含脚本和引用文档，如有）放入所用 Agent 支持的技能目录，不要只复制 `SKILL.md`。
 
 使用 `lzl-private` 时告诉 Agent：
 
 > 使用 lzl-private 保存和按需查找我的重要资料。先检查已有配置；首次使用时，给我包含完整绝对路径的存储选项，只有检测到已有资料库时才展示复用选项。
 
 普通资料需要 Python 3.10+；密钥功能额外使用 `keyring` 和系统凭据库。安装、密钥录入及安全边界见 [lzl-private 使用说明](skills/lzl-private/README.md)。用户的真实资料与密钥均不放在本仓库。
+
+使用 `lzl-refactor` 时告诉 Agent：
+
+> 使用 lzl-refactor，帮我重构这个组织、产品体系、软件项目或局部模块。先确认是梳理混乱、建议方向还是按我给定的目标研究，再给出一套包含架构图的推荐方案；这次不直接实施。
+
+也可用 `$lzl-refactor` 调用。选择“建议方向”时，技能会先研究并提出方向，待你确认目标后再完成架构方案。完整交付分为“新架构、精简原因与架构图”和“详细内容”两部分，不默认附分步实施路线，也不会为了重构而强行改变有效结构。安装时请保留整个 `skills/lzl-refactor/` 目录；Codex 默认安装到 `~/.codex/skills/lzl-refactor/`（设置了 `CODEX_HOME` 时使用其下的 `skills/`）。
 
 使用 `lzl-testplan` 时，在待测项目中告诉 Agent：
 
