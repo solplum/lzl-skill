@@ -69,9 +69,9 @@
 * **[lzl-dream](skills/lzl-dream/SKILL.md)** — **纯传统中国占梦分析 Skill**
   基于《梦林玄解》《断梦秘书》《周公解梦》《古今图书集成·梦部》与先秦两汉医家道藏（共 3,505 条清洗古籍入库），采用“先辨梦源与病梦、再审梦变与四时五行、后查原辞互证”的纯传统占梦流程，支持零依赖确定性检索引擎与简明追问/直解双态切换。
 * **[high-confidence-mingli-skill](https://github.com/solplum/high-confidence-mingli-skill)** — **高置信度命理分析伴侣**
-  八字 / 紫微斗数 / 七政四余三盘互译。依托置信度门禁与斯多葛克制语风，提供客观中立的命盘规律推演。
+  八字 / 紫微斗数 / 七政四余三盘确定性排盘，配合 1,351 条清洗验证三体系古典原典库与零依赖 `mingli_query.py` 按盘检索，提供有据可查的命理推演。
 * **[fortune-observatory](https://github.com/solplum/fortune-observatory)** — **高精度排盘观测网站**
-  采用标准天文星历算法，配备现代互联网文化主题界面的命理排盘应用。
+  采用标准天文星历算法，集成三体系古典原典按盘检索、纯传统占梦（3,505 条古籍）、奇门遁甲与流式 AI 解读的命理观测平台。
 * **[Reflection](https://github.com/solplum/Reflection)** — **桌面端内省与复盘应用**
   专注心境梳理与底层决策念头复盘，倡导工具为人服务的工程哲学。
 
