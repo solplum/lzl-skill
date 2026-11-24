@@ -66,6 +66,8 @@
 ---
 
 ### 🔮 4. 认知哲学与传统文化
+* **[lzl-dream](skills/lzl-dream/SKILL.md)** — **纯传统中国占梦分析 Skill**
+  基于《梦林玄解》《断梦秘书》《周公解梦》《古今图书集成·梦部》与先秦两汉医家道藏（共 3,505 条清洗古籍入库），采用“先辨梦源与病梦、再审梦变与四时五行、后查原辞互证”的纯传统占梦流程，支持零依赖确定性检索引擎与简明追问/直解双态切换。
 * **[high-confidence-mingli-skill](https://github.com/solplum/high-confidence-mingli-skill)** — **高置信度命理分析伴侣**
   八字 / 紫微斗数 / 七政四余三盘互译。依托置信度门禁与斯多葛克制语风，提供客观中立的命盘规律推演。
 * **[fortune-observatory](https://github.com/solplum/fortune-observatory)** — **高精度排盘观测网站**
@@ -80,7 +82,7 @@
 项目内技能适配遵循通用 `SKILL.md` 规范的 Agent 环境（如 Claude Code、Codex、ZCode 等）。
 
 ### 单技能引入
-本仓库内的 `lzl-advisor`、`lzl-refactor`、`lzl-testplan` 和 `lzl-private` 可独立使用：将 `skills/` 下对应的完整技能文件夹（含脚本和引用文档，如有）放入所用 Agent 支持的技能目录，不要只复制 `SKILL.md`。
+本仓库内的 `lzl-advisor`、`lzl-refactor`、`lzl-testplan`、`lzl-private` 和 `lzl-dream` 可独立使用：将 `skills/` 下对应的完整技能文件夹（含脚本和引用文档，如有）放入所用 Agent 支持的技能目录，不要只复制 `SKILL.md`。详情可参阅 [lzl-dream 使用说明](skills/lzl-dream/README.md)。
 
 使用 `lzl-private` 时告诉 Agent：
 
